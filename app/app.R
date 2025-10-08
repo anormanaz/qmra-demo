@@ -3,6 +3,8 @@ library(bslib)
 install.packages("shinylive")   
 library(shinylive)
 
+#need to run in console before pushing updates:
+#shinylive::export(appdir = "app", destdir = "docs")
 
 ui <- fluidPage(
   tags$head(
