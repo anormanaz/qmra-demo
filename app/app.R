@@ -1,3 +1,6 @@
+#to update run in console
+#shinylive::export(appdir = "app", destdir = "docs")
+
 library(shiny)
 library(bslib)
 install.packages("shinylive")   
@@ -112,3 +115,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
