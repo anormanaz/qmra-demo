@@ -1,15 +1,23 @@
 #to update run in console
 #shinylive::export(appdir = "app", destdir = "docs")
 
+#in terminal:
+#git add docs
+#git commit -m "Deploy updated Shiny app"
+#git push
+
 library(shiny)
 library(bslib)
 install.packages("shinylive")   
 library(shinylive)
 library(truncdist)
-library(gt)
 library(tibble)
 library(scales)
 library(glue)
+
+install.packages("remotes")
+
+remotes::install_version("gt", version = "0.11.1")
 
 ui <- fluidPage(
   titlePanel("Airborne Infection Risk Calculator"),
