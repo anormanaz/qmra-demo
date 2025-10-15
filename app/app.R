@@ -123,4 +123,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
-
+shinylive::export(appdir = "app", destdir = "docs")
